@@ -1,6 +1,6 @@
 """Validation utilities for clinical text."""
 
-from typing import Dict, Tuple
+from typing import Any, Dict, Tuple
 
 
 def validate_clinical_text(text: str) -> Tuple[bool, str]:
@@ -47,7 +47,7 @@ def validate_text_length(text: str, min_length: int = 10, max_length: int = 5000
     return min_length <= text_len <= max_length
 
 
-def check_text_quality(text: str) -> Dict[str, any]:
+def check_text_quality(text: str) -> Dict[str, Any]:
     """
     Check quality metrics for clinical text.
     

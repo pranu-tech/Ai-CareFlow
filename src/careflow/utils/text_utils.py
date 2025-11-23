@@ -53,7 +53,6 @@ def extract_key_terms(text: str) -> List[str]:
     ]
     
     key_terms = []
-    text_lower = text.lower()
     
     # Extract pattern-based terms
     for pattern in clinical_patterns:
